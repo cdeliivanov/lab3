@@ -15,4 +15,17 @@ public class ArrayTests {
     int[] input1 = { };
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
+
+  @Test
+  public void testRIPMulipleInputs(){
+    int[] input1 = {3, 4};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{4, 3}, input1);
+  }
+
+  @Test
+  public void testRMultipleInputs() {
+    int[] input1 = {3, 4};
+    assertArrayEquals(new int[]{4, 3}, ArrayExamples.reversed(input1));
+  }
 }
